@@ -15,7 +15,7 @@ import {
 } from './pages/component-sidenav/component-sidenav-can-load-guard';
 import {GuideViewer} from './pages/guide-viewer/guide-viewer';
 
-export const MATERIAL_DOCS_ROUTES: Routes = [
+export const WGT_FRONTEND_ROUTES: Routes = [
   {path: '', component: Homepage, pathMatch: 'full', data: {}},
 //   {path: 'categories', redirectTo: '/components/categories'},
 //   {path: 'guides', component: GuideList, data: {}},

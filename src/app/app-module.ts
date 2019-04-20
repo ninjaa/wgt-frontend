@@ -9,7 +9,7 @@ import {ExampleModule} from '@angular/material-examples';
 
 import {WgtFrontendApp} from './wgt-frontend-app';
 import {HomepageModule} from './pages/homepage';
-import {MATERIAL_DOCS_ROUTES} from './routes';
+import {WGT_FRONTEND_ROUTES} from './routes';
 import {ComponentListModule} from './pages/component-list';
 import {ComponentViewerModule} from './pages/component-viewer/component-viewer';
 import {ComponentCategoryListModule} from './pages/component-category-list/component-category-list';
@@ -42,7 +42,7 @@ import {GaService} from './shared/ga/ga';
     FormsModule,
     HttpClientModule,
     MatNativeDateModule,
-    RouterModule.forRoot(MATERIAL_DOCS_ROUTES),
+    RouterModule.forRoot(WGT_FRONTEND_ROUTES),
     ComponentCategoryListModule,
     ComponentHeaderModule,
     ComponentListModule,
