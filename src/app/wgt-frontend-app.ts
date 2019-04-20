@@ -1,16 +1,16 @@
-import { Component, ViewEncapsulation } from "@angular/core";
-import { Router, NavigationEnd } from "@angular/router";
-import { filter } from "rxjs/operators";
+import { Component, ViewEncapsulation } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
 
-import { GaService } from "./shared/ga/ga";
+import { GaService } from './shared/ga/ga';
 
 @Component({
   selector: "wgt-frontend-app",
-  templateUrl: "./wgt-frontend-app.component.html",
-  styleUrls: ["./wgt-frontend-app.component.scss"]
+  templateUrl: './wgt-frontend-app.html',
+  styleUrls: ['./wgt-frontend-app.scss']
 })
 export class WgtFrontendApp {
-  title = "wgt-frontend";
+  title = 'wgt-frontend';
 
   constructor(router: Router, ga: GaService) {
     let previousRoute = router.routerState.snapshot.url;
@@ -52,8 +52,8 @@ function isNavigationWithinComponentView(previousUrl: string, newUrl: string) {
 }
 
 function resetScrollPosition() {
-  if (typeof document === "object" && document) {
-    const sidenavContent = document.querySelector(".mat-drawer-content");
+  if (typeof document === 'object' && document) {
+    const sidenavContent = document.querySelector('.mat-drawer-content');
     if (sidenavContent) {
       sidenavContent.scrollTop = 0;
     }

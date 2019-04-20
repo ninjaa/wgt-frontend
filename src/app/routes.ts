@@ -1,22 +1,23 @@
+import {BasicAuthGuard} from './shared/basic-auth-guard';
 import {Homepage} from './pages/homepage';
-import {ComponentList} from './pages/component-list';
-import {GuideList} from './pages/guide-list';
+// import {ComponentList} from './pages/component-list';
+// import {GuideList} from './pages/guide-list';
 import {Routes} from '@angular/router';
-import {
-  ComponentApi,
-  ComponentExamples,
-  ComponentOverview,
-  ComponentViewer
-} from './pages/component-viewer/component-viewer';
-import {ComponentCategoryList} from './pages/component-category-list/component-category-list';
-import {ComponentSidenav} from './pages/component-sidenav/component-sidenav';
-import {
-  CanActivateComponentSidenav
-} from './pages/component-sidenav/component-sidenav-can-load-guard';
-import {GuideViewer} from './pages/guide-viewer/guide-viewer';
+// import {
+//   ComponentApi,
+//   ComponentExamples,
+//   ComponentOverview,
+//   ComponentViewer
+// } from './pages/component-viewer/component-viewer';
+// import {ComponentCategoryList} from './pages/component-category-list/component-category-list';
+// import {ComponentSidenav} from './pages/component-sidenav/component-sidenav';
+// import {
+//   CanActivateComponentSidenav
+// } from './pages/component-sidenav/component-sidenav-can-load-guard';
+// import {GuideViewer} from './pages/guide-viewer/guide-viewer';
 
 export const WGT_FRONTEND_ROUTES: Routes = [
-  {path: '', component: Homepage, pathMatch: 'full', data: {}},
+  {path: '', component: Homepage, canActivate: [BasicAuthGuard], pathMatch: 'full', data: {}},
 //   {path: 'categories', redirectTo: '/components/categories'},
 //   {path: 'guides', component: GuideList, data: {}},
 //   // Since https://github.com/angular/material2/pull/9574, the cdk-table guide became the overview
