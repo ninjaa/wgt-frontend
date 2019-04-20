@@ -9,7 +9,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {DemoMaterialModule} from './material-module';
 
-import {MaterialDocsExample} from './app/material-docs-example';
+// import {MaterialDocsExample} from './app/material-docs-example';
 
 @NgModule({
   imports: [
@@ -21,9 +21,9 @@ import {MaterialDocsExample} from './app/material-docs-example';
     MatNativeDateModule,
     ReactiveFormsModule,
   ],
-  entryComponents: [MaterialDocsExample],
-  declarations: [MaterialDocsExample],
-  bootstrap: [MaterialDocsExample],
+  entryComponents: [/*MaterialDocsExample*/],
+  declarations: [/*MaterialDocsExample*/],
+  bootstrap: [/*MaterialDocsExample*/],
   providers: []
 })
 export class AppModule {}
