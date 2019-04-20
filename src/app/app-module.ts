@@ -5,9 +5,9 @@ import {LocationStrategy, PathLocationStrategy} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {RouterModule} from '@angular/router';
 import {MatNativeDateModule} from '@angular/material';
-import {ExampleModule} from '@angular/material-examples';
+// import {ExampleModule} from '@angular/material-examples';
 
-import {MaterialDocsApp} from './material-docs-app';
+import {WgtFrontendApp} from './wgt-frontend-app';
 import {HomepageModule} from './pages/homepage';
 import {MATERIAL_DOCS_ROUTES} from './routes';
 import {ComponentListModule} from './pages/component-list';
@@ -20,7 +20,7 @@ import {ComponentHeaderModule} from './pages/component-page-header/component-pag
 import {StyleManager} from './shared/style-manager';
 import {SvgViewerModule} from './shared/svg-viewer/svg-viewer';
 import {ThemePickerModule} from './shared/theme-picker';
-import {StackblitzButtonModule} from './shared/stackblitz';
+// import {StackblitzButtonModule} from './shared/stackblitz';
 import {NavBarModule} from './shared/navbar';
 import {ThemeStorage} from './shared/theme-picker/theme-storage/theme-storage';
 import {GuideItems} from './shared/guide-items/guide-items';
@@ -38,7 +38,7 @@ import {GaService} from './shared/ga/ga';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ExampleModule,
+    // ExampleModule,
     FormsModule,
     HttpClientModule,
     MatNativeDateModule,
@@ -54,11 +54,11 @@ import {GaService} from './shared/ga/ga';
     GuideViewerModule,
     HomepageModule,
     NavBarModule,
-    StackblitzButtonModule,
+    // StackblitzButtonModule,
     SvgViewerModule,
     ThemePickerModule,
   ],
-  declarations: [MaterialDocsApp],
+  declarations: [WgtFrontendApp],
   providers: [
     ComponentPageTitle,
     DocumentationItems,
@@ -69,6 +69,6 @@ import {GaService} from './shared/ga/ga';
     CanActivateComponentSidenav,
     {provide: LocationStrategy, useClass: PathLocationStrategy},
   ],
-  bootstrap: [MaterialDocsApp],
+  bootstrap: [WgtFrontendApp],
 })
 export class AppModule {}
