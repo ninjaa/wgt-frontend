@@ -17,7 +17,7 @@
 
 
 // Styles for the docs app that are based on the current theme.
-@mixin material-docs-app-theme($theme) {
+@mixin wgt-frontend-app-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);

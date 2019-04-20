@@ -5,7 +5,8 @@ import { filter } from 'rxjs/operators';
 import { GaService } from './shared/ga/ga';
 
 @Component({
-  selector: "wgt-frontend-app",
+  // tslint:disable-next-line: component-selector
+  selector: 'wgt-frontend-app',
   templateUrl: './wgt-frontend-app.html',
   styleUrls: ['./wgt-frontend-app.scss']
 })
