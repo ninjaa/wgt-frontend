@@ -38,7 +38,7 @@ import {GaService} from './shared/ga/ga';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    // ExampleModule,
+    ExampleModule,
     FormsModule,
     HttpClientModule,
     MatNativeDateModule,
@@ -54,7 +54,7 @@ import {GaService} from './shared/ga/ga';
     GuideViewerModule,
     HomepageModule,
     NavBarModule,
-    // StackblitzButtonModule,
+    StackblitzButtonModule,
     SvgViewerModule,
     ThemePickerModule,
   ],

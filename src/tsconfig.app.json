@@ -1,11 +1,13 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../out-tsc/app",
-    "types": []
+    "outDir": "../dist/out-tsc",
+    "types": ["q", "selenium-webdriver", "jasmine"],
+    "mapRoot": "./"
   },
   "exclude": [
     "test.ts",
-    "**/*.spec.ts"
+    "**/*.spec.ts",
+    "assets"
   ]
 }
